@@ -1,7 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
-
-const url = import.meta.env.VITE_SUPABASE_URL;
-const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-export const isSupabaseConfigured = Boolean(url && key && !url.includes('YOUR_PROJECT'));
-export const supabase = isSupabaseConfigured ? createClient(url, key) : null;
+/*
+  Supabase connection will be added in the next setup stage.
+  Never put a Supabase service_role key in browser code.
+  For a real deployment, use only the project's anon/publishable key
+  and enable Row Level Security policies in Supabase.
+*/
+export const SUPABASE_URL = "";
+export const SUPABASE_ANON_KEY = "";

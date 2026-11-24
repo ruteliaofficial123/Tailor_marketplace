@@ -1,11 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f7f2e9" />
-    <meta name="description" content="Discover talented local tailors and their work." />
-    <title>Maison Stitch — Find Your Perfect Tailor</title>
-  </head>
-  <body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e9">
+  <meta name="description" content="Discover talented local tailors, explore their work and connect directly.">
+  <title>Maison Stitch — Find Your Perfect Tailor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Maison Stitch home"><span class="brand-mark">MS</span><span>maison <b>stitch</b></span></a>
+    <nav><a href="#discover">Find a tailor</a><a href="#how">How it works</a><a href="#join">For tailors</a></nav>
+    <button class="button button-dark" id="openJoin">Join the community</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MADE TO FIT YOU</p>
+        <h1>Your style.<br><em>Your local tailor.</em></h1>
+        <p class="hero-text">Discover skilled tailors in your neighbourhood. Explore their work, find your perfect fit and connect directly.</p>
+        <a class="button button-dark" href="#discover">Discover tailors <span>↗</span></a>
+        <div class="hero-note"><span class="dot"></span> A community for craft, creativity & perfect fits</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Fashion atelier inspired illustration">
+        <div class="art-circle"></div><div class="art-card"><span>THE ART OF</span><strong>GOOD<br>FIT.</strong><small>CRAFTED LOCALLY</small></div>
+        <div class="art-stitch">✳</div><div class="art-caption">Thoughtfully made.<br>Beautifully worn.</div>
+      </div>
+    </section>
+
+    <section class="search-section" id="discover">
+      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Meet your next <em>maker.</em></h2></div><p>Browse local talent and find someone who understands your style.</p></div>
+      <div class="search-bar">
+        <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search tailor, speciality or city"></label>
+        <select id="specialtyFilter" aria-label="Filter by speciality"><option value="">All specialities</option><option>Blouse stitching</option><option>Bridal wear</option><option>Alterations</option><option>Men's tailoring</option><option>Designer wear</option></select>
+        <button class="button button-dark" id="searchButton">Search</button>
+      </div>
+      <div class="results-line"><span id="resultCount">Featured tailors</span><span>LOCAL CRAFT · REAL PEOPLE</span></div>
+      <div class="tailor-grid" id="tailorGrid">
+        <article class="tailor-card" data-name="Aarohi Studio" data-city="Rajkot" data-specialty="Blouse stitching">
+          <div class="tailor-photo photo-one"><span>01 / STUDIO</span><b>AS</b></div><div class="card-body"><div class="card-top"><h3>Aarohi Studio</h3><span class="verified">●</span></div><p class="muted">Rajkot, Gujarat</p><div class="tags"><span>Blouse stitching</span><span>Custom fit</span></div><a class="contact-link" href="https://wa.me/?text=Hello%20Aarohi%20Studio%2C%20I%20found%20you%20on%20Maison%20Stitch." target="_blank" rel="noopener">Contact on WhatsApp ↗</a></div>
+        </article>
+        <article class="tailor-card" data-name="The Needle Room" data-city="Rajkot" data-specialty="Men's tailoring">
+          <div class="tailor-photo photo-two"><span>02 / ATELIER</span><b>NR</b></div><div class="card-body"><div class="card-top"><h3>The Needle Room</h3><span class="verified">●</span></div><p class="muted">Rajkot, Gujarat</p><div class="tags"><span>Men's tailoring</span><span>Alterations</span></div><a class="contact-link" href="https://wa.me/?text=Hello%20The%20Needle%20Room%2C%20I%20found%20you%20on%20Maison%20Stitch." target="_blank" rel="noopener">Contact on WhatsApp ↗</a></div>
+        </article>
+        <article class="tailor-card" data-name="Riwaaz Couture" data-city="Ahmedabad" data-specialty="Bridal wear">
+          <div class="tailor-photo photo-three"><span>03 / COUTURE</span><b>RC</b></div><div class="card-body"><div class="card-top"><h3>Riwaaz Couture</h3><span class="verified">●</span></div><p class="muted">Ahmedabad, Gujarat</p><div class="tags"><span>Bridal wear</span><span>Designer wear</span></div><a class="contact-link" href="https://wa.me/?text=Hello%20Riwaaz%20Couture%2C%20I%20found%20you%20on%20Maison%20Stitch." target="_blank" rel="noopener">Contact on WhatsApp ↗</a></div>
+        </article>
+      </div>
+      <p class="demo-note">Demo profiles are shown as examples. Replace them with real, approved tailor listings before launching to customers.</p>
+    </section>
+
+    <section class="how-section" id="how">
+      <p class="eyebrow">SIMPLE BY DESIGN</p><h2>A better way to find<br><em>your perfect fit.</em></h2>
+      <div class="steps"><div><span>01</span><h3>Explore</h3><p>Browse tailor profiles and discover their specialities.</p></div><div><span>02</span><h3>Get inspired</h3><p>Review their work and find a style that feels like you.</p></div><div><span>03</span><h3>Connect</h3><p>Message the tailor directly to discuss your requirements.</p></div></div>
+    </section>
+
+    <section class="join-section" id="join"><div><p class="eyebrow">FOR THE MAKERS</p><h2>Good work deserves<br>to be <em>discovered.</em></h2><p>Are you a tailor? Create your presence, showcase your craft and meet new customers.</p></div><button class="button button-light" id="openJoin2">Register your interest ↗</button></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">MS</span><span>maison <b>stitch</b></span></a><span>Celebrating local craft, one stitch at a time.</span><span>© 2026 Maison Stitch</span></footer>
+
+  <dialog id="joinDialog">
+    <form method="dialog" class="dialog-card" id="interestForm">
+      <button class="dialog-close" aria-label="Close">×</button>
+      <p class="eyebrow">JOIN MAISON STITCH</p><h2>Let's get <em>connected.</em></h2>
+      <p class="muted">This starter form opens your email app. Online account creation will be connected in the next setup step.</p>
+      <label>Your name<input name="name" required placeholder="Your full name"></label>
+      <label>Email or WhatsApp number<input name="contact" required placeholder="How can we reach you?"></label>
+      <label>I am a<select name="role"><option>Customer</option><option>Tailor</option></select></label>
+      <button class="button button-dark" type="submit">Send interest ↗</button>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
 </html>
