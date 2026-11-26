@@ -1,4 +1,4 @@
-# Maison Stitch — static starter
+# Tailor & co.Stitch — static starter
 
 This is a static HTML/CSS/JavaScript starter that works on GitHub Pages without Node.js or a build step.
 
