@@ -8,4 +8,4 @@ window.sutraSupabase = window.supabase.createClient(
   SUPABASE_PUBLISHABLE_KEY
 );
 
-console.log("SUTRA Supabase initialized");
+console.log("Tailor & co. Supabase initialized");
