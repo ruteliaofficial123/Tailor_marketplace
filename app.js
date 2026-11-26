@@ -22,7 +22,7 @@ document.getElementById("specialtyFilter").addEventListener("change", filterTail
 document.getElementById("interestForm").addEventListener("submit", e => {
   e.preventDefault();
   const data = new FormData(e.currentTarget);
-  const subject = encodeURIComponent("Maison Stitch — Registration interest");
+  const subject = encodeURIComponent("Tailor & co.Stitch — Registration interest");
   const body = encodeURIComponent(`Name: ${data.get("name")}\nContact: ${data.get("contact")}\nI am a: ${data.get("role")}`);
   window.location.href = `mailto:?subject=${subject}&body=${body}`;
   dialog.close();
