@@ -1,4 +1,4 @@
-# Maison Stitch — starter website
+# Tailor & co.Stitch — starter website
 
 This is a starter project for a tailor/customer directory. It includes a luxury editorial design, searchable tailor cards, demo listings, WhatsApp links, Google Maps search links, Supabase email/password registration and login, and a portfolio image upload flow.
 
